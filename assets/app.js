@@ -98,10 +98,19 @@
     window.scrollTo(0, 0);
   }
 
+  // Deterministic pick for the given day — same image all day, changes at local midnight.
+  function pictureOfTheDay(pool) {
+    var d = new Date();
+    var key = d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate();
+    var h = 2166136261;
+    for (var i = 0; i < key.length; i++) { h ^= key.charCodeAt(i); h = Math.imul(h, 16777619); }
+    var ordered = pool.slice().sort(function (a, b) { return a.id < b.id ? -1 : 1; });
+    return ordered[(h >>> 0) % ordered.length];
+  }
   function renderHome() {
     var pool = published().filter(function (i) { return !i.classification.is_event; });
     if (!pool.length) pool = published();
-    var im = pool[Math.floor(Math.random() * pool.length)];
+    var im = pictureOfTheDay(pool);
     var today = new Date().toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
     V.home.innerHTML =
       '<h1 class="hpod-eyebrow">Henderson&rsquo;s Picture of the Day <span>&bull;</span> ' + today + "</h1>" +
