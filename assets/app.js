@@ -99,16 +99,28 @@
   }
 
   // Deterministic pick for the given day — same image all day, changes at local midnight.
+  function fnv(str) {
+    var h = 2166136261;
+    for (var i = 0; i < str.length; i++) { h ^= str.charCodeAt(i); h = Math.imul(h, 16777619); }
+    // murmur3 finalizer — gives short strings a proper avalanche
+    h ^= h >>> 16; h = Math.imul(h, 2246822507);
+    h ^= h >>> 13; h = Math.imul(h, 3266489909);
+    h ^= h >>> 16;
+    return h >>> 0;
+  }
+  // Highest-random-weight selection: each image gets a score for today from
+  // hash(date + id); the highest score wins. Stable through the day, and adding
+  // or removing images leaves every other day's pick untouched — a new image
+  // only ever claims a day it would independently have scored highest on.
   function pictureOfTheDay(pool) {
     var d = new Date();
-    var ordered = pool.slice().sort(function (a, b) { return a.id < b.id ? -1 : 1; });
-    // Seed = the day + a fingerprint of the current image set, so the pick is
-    // stable through the day but re-rolls whenever an image is added / removed.
-    var key = d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate() + "|" +
-              ordered.map(function (i) { return i.id; }).join(",");
-    var h = 2166136261;
-    for (var i = 0; i < key.length; i++) { h ^= key.charCodeAt(i); h = Math.imul(h, 16777619); }
-    return ordered[(h >>> 0) % ordered.length];
+    var day = d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate();
+    var best = null, bestScore = -1;
+    pool.forEach(function (im) {
+      var s = fnv(day + "\0" + im.id);
+      if (s > bestScore || (s === bestScore && (!best || im.id < best.id))) { bestScore = s; best = im; }
+    });
+    return best;
   }
   function renderHome() {
     var pool = published().filter(function (i) { return !i.classification.is_event; });
