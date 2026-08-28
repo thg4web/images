@@ -109,7 +109,6 @@ a:hover { text-decoration: none; }
   overflow-wrap: anywhere; text-shadow: var(--wordmark-glow);
   text-decoration: none; display: inline-block;
 }
-.wordmark .stop { color: var(--accent); }
 .tagline {
   font-family: "Audiowide", "Arial Narrow", sans-serif;
   font-size: clamp(0.78rem, 2vw, 0.98rem);
