@@ -119,7 +119,6 @@
           '<span class="media-slot"></span>' +
           '<span class="media-zoom" aria-hidden="true"><span class="glyph">&#10530;</span> Full resolution</span></a>' +
         '<button class="media-info" type="button" aria-haspopup="dialog"><span class="glyph" aria-hidden="true">i</span> Info</button>' +
-        '<figcaption class="media-watermark" aria-hidden="true">By A. Henderson</figcaption>' +
       "</figure>" +
       '<div class="hpod-caption"><p class="hpod-title">' + esc(im.title) + "</p>" +
         '<p class="hpod-meta">Captured ' + esc(im.captured) + " · " + esc(im.acquisition.scope) +
@@ -267,7 +266,6 @@
         '<a class="media-link" href="' + im.media.full + '" target="_blank" rel="noopener noreferrer" aria-label="Open the full-resolution image">' +
           '<span class="media-slot"></span>' +
           '<span class="media-zoom" aria-hidden="true"><span class="glyph">&#10530;</span> Full resolution</span></a>' +
-        '<figcaption class="media-watermark" aria-hidden="true">By A. Henderson</figcaption>' +
       "</div>" +
       '<div class="pn-bar">' +
         '<a href="' + (prev ? "#/image/" + prev : "#") + '"' + (prev ? "" : ' aria-disabled="true"') + ">&larr; Previous</a>" +
@@ -308,7 +306,7 @@
         '<p class="detail-prose" style="margin-top:0.9rem">' + esc(t.description) + "</p></div>" +
       '<div class="img-hero">' +
         '<a class="media-link" href="#/image/' + best.id + '" aria-label="Open the current best image page"><span class="media-slot"></span></a>' +
-        '<figcaption class="media-watermark" aria-hidden="true">By A. Henderson</figcaption></div>' +
+        '</div>' +
       '<p class="detail-links"><a href="#/image/' + best.id + '">&rarr; ' + esc(best.revision) + ", captured " + esc(best.captured) + "</a></p>" +
       strip;
     V.target.querySelector(".media-slot").replaceWith(img(best.media.web, best.title));
@@ -326,7 +324,7 @@
       '<p class="detail-sub">' + esc(s.date) + " · " + esc(s.location) + " · " + esc(s.conditions) + "</p>" +
       '<div class="img-hero">' +
         '<a class="media-link" href="' + (hero ? hero.media.full : "#") + '" target="_blank" rel="noopener noreferrer" aria-label="Open the full-resolution image"><span class="media-slot"></span></a>' +
-        '<figcaption class="media-watermark" aria-hidden="true">By A. Henderson</figcaption></div>' +
+        '</div>' +
       '<div class="detail-prose" style="margin-top:1.2rem">' + (s.body_html || "") + "</div>" +
       '<p class="frames-h">Frames from this session</p><div class="grid"></div>' +
       '<div class="acq"><h3>Acquisition &middot; session</h3><dl>' +

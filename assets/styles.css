@@ -181,13 +181,6 @@ main { padding-top: 2.25rem; padding-bottom: 3rem; }
 .media-zoom .glyph { font-family: "Exo 2", sans-serif; font-size: 0.85rem; }
 .hpod-frame:hover .media-zoom, .img-hero:hover .media-zoom,
 .media-link:focus-visible .media-zoom { opacity: 1; }
-.media-watermark {
-  position: absolute; right: 0.95rem; bottom: 0.7rem;
-  font-family: "Snell Roundhand", "Apple Chancery", "Segoe Script", cursive;
-  font-size: clamp(0.85rem, 2.1vw, 1.1rem);
-  color: rgba(238,238,238,0.72); text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-  pointer-events: none;
-}
 .media-info {
   position: absolute; right: 0.7rem; top: 0.7rem;
   display: inline-flex; align-items: center; gap: 0.4rem;
