@@ -101,10 +101,13 @@
   // Deterministic pick for the given day — same image all day, changes at local midnight.
   function pictureOfTheDay(pool) {
     var d = new Date();
-    var key = d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate();
+    var ordered = pool.slice().sort(function (a, b) { return a.id < b.id ? -1 : 1; });
+    // Seed = the day + a fingerprint of the current image set, so the pick is
+    // stable through the day but re-rolls whenever an image is added / removed.
+    var key = d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate() + "|" +
+              ordered.map(function (i) { return i.id; }).join(",");
     var h = 2166136261;
     for (var i = 0; i < key.length; i++) { h ^= key.charCodeAt(i); h = Math.imul(h, 16777619); }
-    var ordered = pool.slice().sort(function (a, b) { return a.id < b.id ? -1 : 1; });
     return ordered[(h >>> 0) % ordered.length];
   }
   function renderHome() {
