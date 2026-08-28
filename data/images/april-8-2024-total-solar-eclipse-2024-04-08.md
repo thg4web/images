@@ -15,7 +15,7 @@ sub_seconds:
 sub_count:
 filter: 
 processing: [Seestar (on-mount stack)]
-location: "Lone Oak area, Texas"
+location: "Lone Oak, Texas"
 moon_illum_pct:
 object_type: solar system
 sub_kind: Sun
@@ -28,4 +28,4 @@ license: CC BY-NC 4.0
 master: "~/My_Library/Research/Astronomy/Eclipes/2024_Total_Solar_Eclipse_Data/03-Pictures/eclipse_money_shot.png"
 ---
 
-The total phase — the Sun's corona around the silhouetted Moon. Shot from the path of totality near Lone Oak, Texas, on 8 April 2024.
+The total phase — the Sun's corona around the silhouetted Moon. Shot from the path of totality in Lone Oak, Texas, on 8 April 2024.
