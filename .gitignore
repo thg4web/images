@@ -27,3 +27,8 @@ working/
 previews/
 *.draft.html
 *.wip.*
+
+# whimages: binary DB is regenerable (whimages rebuild); the .sql dump is committed
+data/whimages.sqlite
+data/whimages.sqlite-wal
+data/whimages.sqlite-shm

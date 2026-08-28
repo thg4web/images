@@ -1,32 +1,4 @@
 [
- {
-  "id": "2025-03-13-total-lunar-eclipse",
-  "title": "Total Lunar Eclipse",
-  "date": "2025-03-13",
-  "is_event": true,
-  "event_type": "lunar eclipse",
-  "location": "Raleigh area, North Carolina",
-  "conditions": "Clear",
-  "scope": "Seestar S50",
-  "moon": "Total, in Earth's umbra",
-  "body_html": "<p>The March 2025 total lunar eclipse, shot as a long timelapse from the Raleigh area. This is a single frame near mid-totality, the Moon fully shadowed and glowing the dull red of sunlight bent through Earth's atmosphere.</p>",
-  "frames": [
-   "lunar-eclipse-2025-03-13"
-  ]
- },
- {
-  "id": "2026-08-27-deep-partial-lunar-eclipse",
-  "title": "Deep Partial Lunar Eclipse",
-  "date": "2026-08-27",
-  "is_event": true,
-  "event_type": "lunar eclipse",
-  "location": "Raleigh area, North Carolina",
-  "conditions": "Clear, steady",
-  "scope": "Seestar S30 Pro",
-  "moon": "~93% eclipsed, high SE",
-  "body_html": "<p>The deep partial eclipse before dawn on 28 August 2026. About 93% of the disc entered the umbra; the hero is a dodge-and-burn blend holding detail from the bright limb through to the shadowed copper.</p>",
-  "frames": [
-   "lunar-eclipse-2026-08-27"
-  ]
- }
+ {"id":"2025-03-13-total-lunar-eclipse","title":"Total Lunar Eclipse","date":"2025-03-13","is_event":true,"event_type":"lunar eclipse","location":"Raleigh area, North Carolina","conditions":"Clear","scope":"Seestar S50","moon":"Total, in Earth's umbra","body_html":"<p>The March 2025 total lunar eclipse, shot as a long timelapse from the Raleigh area. This is a single frame near mid-totality, the Moon fully shadowed and glowing the dull red of sunlight bent through Earth's atmosphere.</p>","frames":["lunar-eclipse-2025-03-13"]},
+ {"id":"2026-08-27-deep-partial-lunar-eclipse","title":"Deep Partial Lunar Eclipse","date":"2026-08-27","is_event":true,"event_type":"lunar eclipse","location":"Raleigh area, North Carolina","conditions":"Clear, steady","scope":"Seestar S30 Pro","moon":"~93% eclipsed, high SE","body_html":"<p>The deep partial eclipse before dawn on 28 August 2026. About 93% of the disc entered the umbra; the hero is a dodge-and-burn blend holding detail from the bright limb through to the shadowed copper.</p>","frames":["lunar-eclipse-2026-08-27"]}
 ]
