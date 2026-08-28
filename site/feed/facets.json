@@ -1,8 +1,8 @@
 {
-  "object_type": {"galaxy": 8,"nebula": 7,"solar system": 3,"star cluster": 3},
+  "object_type": {"galaxy": 8,"nebula": 7,"solar system": 4,"star cluster": 3},
   "event_type": {"lunar eclipse": 2,"comet": 1},
   "constellation": {"Coma Berenices": 2,"Sagittarius": 1,"Monoceros": 1,"Virgo": 1,"Ursa Major": 1,"Taurus": 1,"Andromeda": 1,"Perseus": 1,"Cygnus": 1,"Vulpecula": 1,"Cancer": 1,"Triangulum": 1,"Orion": 1,"Scutum": 1,"Leo": 1,"Cassiopeia": 1,"Canes Venatici": 1},
-  "filter": {"none": 7,"IR-cut": 9,"light-pollution": 5},
-  "integration_bucket": {"under1h": 17,"1-3h": 4},
-  "year": {"2025": 5,"2024": 2,"2026": 14}
+  "filter": {"none": 8,"IR-cut": 9,"light-pollution": 5},
+  "integration_bucket": {"under1h": 18,"1-3h": 4},
+  "year": {"2025": 5,"2024": 2,"2026": 15}
 }
