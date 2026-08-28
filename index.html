@@ -9,6 +9,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Audiowide&family=Exo+2:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<script>
+  /* Default to dark; honour a saved choice. Runs before CSS to avoid a flash. */
+  (function () {
+    var t;
+    try { t = localStorage.getItem("images-theme"); } catch (e) {}
+    document.documentElement.setAttribute("data-theme", (t === "light" || t === "dark") ? t : "dark");
+  })();
+</script>
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>

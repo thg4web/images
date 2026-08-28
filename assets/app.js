@@ -365,9 +365,9 @@
   /* ---- theme + starfield -------------------------------------- */
   (function () {
     var root = document.documentElement, KEY = "images-theme", btn = document.getElementById("themeToggle");
-    function cur() { var s = root.getAttribute("data-theme"); return s || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"); }
+    function cur() { return root.getAttribute("data-theme") || "dark"; }  // head script stamps this; dark by default
     function apply(m, persist) { root.setAttribute("data-theme", m); btn.setAttribute("aria-pressed", m === "dark"); if (persist) { try { localStorage.setItem(KEY, m); } catch (e) { } } }
-    try { var sv = localStorage.getItem(KEY); if (sv === "dark" || sv === "light") apply(sv, false); } catch (e) { }
+    btn.setAttribute("aria-pressed", cur() === "dark");
     btn.addEventListener("click", function () { apply(cur() === "dark" ? "light" : "dark", true); });
   })();
   (function () {
