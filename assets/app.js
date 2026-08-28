@@ -78,7 +78,7 @@
     d.innerHTML =
       '<div class="tile-imgwrap"></div>' +
       (badge ? '<span class="tile-badge">' + esc(badge) + "</span>" : "") +
-      '<button class="tile-info" type="button" aria-label="Quick info for ' + esc(im.title) + '">i</button>' +
+      '<button class="tile-info" type="button" aria-haspopup="dialog" aria-label="Info for ' + esc(im.title) + '"><span class="glyph" aria-hidden="true">i</span> Info</button>' +
       '<a class="tile-link" href="#/image/' + im.id + '" aria-label="' + esc(im.title) + '"></a>' +
       '<div class="tile-body"><p class="tile-name">' + esc(im.title) + "</p>" +
       '<p class="tile-meta">' + String(im.captured).slice(0, 4) + " · " + esc(im.acquisition.scope) + "</p></div>";

@@ -277,12 +277,21 @@ main { padding-top: 2.25rem; padding-bottom: 3rem; }
 }
 .tile-info {
   position: absolute; right: 0.4rem; top: 0.4rem; z-index: 2;
-  width: 1.6rem; height: 1.6rem; display: grid; place-items: center;
-  border-radius: 999px; border: 1px solid rgba(255,255,255,0.22);
+  display: inline-flex; align-items: center; gap: 0.34rem;
+  font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 0.32rem 0.55rem;
+  border-radius: 999px; border: 1px solid rgba(255,255,255,0.18);
   background: rgba(10,14,22,0.6); color: #eef2f8;
-  font-family: "Exo 2", sans-serif; font-size: 0.72rem; cursor: pointer;
+  cursor: pointer; backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+  transition: background 0.15s ease;
 }
 .tile-info:hover { background: rgba(10,14,22,0.85); }
+.tile-info .glyph {
+  display: grid; place-items: center; width: 0.92rem; height: 0.92rem;
+  border-radius: 999px; border: 1px solid currentColor;
+  font-size: 0.62rem; font-family: "Exo 2", sans-serif;
+}
 
 /* ---- DETAIL (image / target / session) --------------------- */
 .detail { max-width: 780px; }
