@@ -43,6 +43,7 @@
       ["Exposure", a.exposure ? (a.exposure + (a.integration ? "  (" + a.integration + " total)" : "")) : (a.integration ? a.integration + " total" : "")],
       ["Filter", a.filter],
       ["Sky", a.location + (a.moon ? " · Moon " + a.moon : "")],
+      ["Position", a.coordinates],
       ["Processing", (a.processing || []).join(" · ")]
     ];
     var out = "<dl>";
