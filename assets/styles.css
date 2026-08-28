@@ -81,8 +81,8 @@ a:hover { text-decoration: none; }
 .asterism-mark {
   display: block; width: 90px; aspect-ratio: 2056 / 1755;
   background: var(--asterism-ink);
-  -webkit-mask: url("__PLEIADES__") center / contain no-repeat;
-  mask: url("__PLEIADES__") center / contain no-repeat;
+  -webkit-mask: url("pleiades.png") center / contain no-repeat;
+  mask: url("pleiades.png") center / contain no-repeat;
   filter: drop-shadow(0 0 8px rgba(47,120,189,0.38));
   transition: filter 0.3s ease, transform 0.3s ease;
 }
