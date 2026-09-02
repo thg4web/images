@@ -13,7 +13,7 @@ sensor: IMX462
 sensor_temp_c:
 sub_seconds:
 sub_count:
-filter: 
+filter: none
 processing: [Seestar (on-mount stack)]
 location: "Raleigh area, North Carolina"
 moon_illum_pct:
