@@ -1,0 +1,114 @@
+{
+  "closed" : [
+    "object_type",
+    "license",
+    "status"
+  ],
+  "scopes" : {
+    "Seestar S30 Pro" : {
+      "filter" : "",
+      "processing" : "Seestar (on-mount stack)",
+      "sensor" : "IMX662"
+    },
+    "Seestar S50" : {
+      "filter" : "",
+      "processing" : "Seestar (on-mount stack)",
+      "sensor" : "IMX462"
+    }
+  },
+  "vocab" : {
+    "constellation" : [
+      "Andromeda",
+      "Cancer",
+      "Canes Venatici",
+      "Cassiopeia",
+      "Coma Berenices",
+      "Cygnus",
+      "Leo",
+      "Libra",
+      "Monoceros",
+      "Orion",
+      "Perseus",
+      "Sagittarius",
+      "Scutum",
+      "Taurus",
+      "Triangulum",
+      "Ursa Major",
+      "Virgo",
+      "Vulpecula"
+    ],
+    "event_type" : [
+      "comet",
+      "lunar eclipse",
+      "solar eclipse"
+    ],
+    "filter" : [
+      "IR-cut",
+      "light-pollution",
+      "none"
+    ],
+    "license" : [
+      "CC BY-NC 4.0"
+    ],
+    "location" : [
+      "Athens, TN",
+      "Lone Oak, Texas",
+      "Raleigh area, North Carolina"
+    ],
+    "object_type" : [
+      "Moon",
+      "Sun",
+      "galaxy",
+      "moon",
+      "nebula",
+      "solar system",
+      "star cluster"
+    ],
+    "processing" : [
+      "50-panel mosaic in Microsoft ICE",
+      "GIMP",
+      "Seestar (on-mount stack)",
+      "Seestar (single frame)",
+      "Siril"
+    ],
+    "revision" : [
+      "v1"
+    ],
+    "scope" : [
+      "Questar 3.5",
+      "Questar 3.5\" (prime focus)",
+      "Seestar S30 Pro",
+      "Seestar S50"
+    ],
+    "status" : [
+      "published",
+      "archived"
+    ],
+    "sub_kind" : [
+      "Moon",
+      "Sun",
+      "comet",
+      "emission",
+      "emission \/ dark",
+      "open",
+      "planetary",
+      "spiral",
+      "spiral (edge-on)",
+      "supernova remnant"
+    ],
+    "tags" : [
+      "Moon",
+      "Sun",
+      "eclipse",
+      "galaxy",
+      "moon",
+      "mosaic",
+      "nebula",
+      "solar",
+      "solar eclipse",
+      "star",
+      "sun",
+      "transit"
+    ]
+  }
+}
