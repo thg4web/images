@@ -13,8 +13,8 @@ sensor: iPhone 6 Plus
 sensor_temp_c:
 sub_seconds:
 sub_count:
-filter: 
-processing: iPhone 
+filter: none
+processing: []
 location: "Athens, TN"
 moon_illum_pct:
 object_type: Sun
@@ -23,9 +23,10 @@ catalogs: []
 constellation: 
 is_event: false
 event_type: 
-tags: [Sun,eclipse,solar eclipse]
+tags: [Sun, eclipse, solar eclipse]
 license: CC BY-NC 4.0
 master: "questar-iphone-archive/2017-08-21-total-solar-eclipse.jpg"
+crop: "0.2599,0.0219,0.5484,0.6845"
 ---
 
 Seestar S50 stack. Captured from the Athens, TN.
