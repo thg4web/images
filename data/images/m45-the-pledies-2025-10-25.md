@@ -17,7 +17,7 @@ filter: IR-cut
 processing: [Seestar (on-mount stack)]
 location: "Raleigh area, North Carolina"
 moon_illum_pct: 15
-object_type: asterism
+object_type: Asterism
 sub_kind: 
 catalogs: [messier]
 constellation: 

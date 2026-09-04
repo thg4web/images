@@ -17,7 +17,7 @@ filter: none
 processing: [Siril, GIMP]
 location: "Raleigh area, North Carolina"
 moon_illum_pct:
-object_type: solar system
+object_type: Solar System
 sub_kind: Moon
 catalogs: [Lunar eclipse]
 constellation: 

@@ -1,7 +1,7 @@
 ---
 id: 1st-quarter-moon
 name: 1st Quarter Moon
-object_type: moon
+object_type: Moon
 sub_kind: 
 catalogs: []
 constellation: 

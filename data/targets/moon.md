@@ -1,7 +1,7 @@
 ---
 id: moon
 name: The Moon
-object_type: solar system
+object_type: Solar System
 sub_kind: Moon
 catalogs: []
 constellation: 

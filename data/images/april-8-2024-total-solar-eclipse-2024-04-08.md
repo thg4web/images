@@ -17,7 +17,7 @@ filter:
 processing: [Seestar (on-mount stack)]
 location: "Lone Oak, Texas"
 moon_illum_pct:
-object_type: solar system
+object_type: Solar System
 sub_kind: Sun
 catalogs: []
 constellation: 

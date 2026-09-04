@@ -1,7 +1,7 @@
 ---
 id: april-8-2024-total-solar-eclipse
 name: April 8, 2024 Total Solar Eclipse
-object_type: solar system
+object_type: Solar System
 sub_kind: Sun
 catalogs: []
 constellation: 
