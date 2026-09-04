@@ -8,12 +8,12 @@ captured: 2026-09-04
 processed: 2026-09-04
 revision: v1
 supersedes:
-scope: 
-sensor: IMX462
+scope: Seestar S30 Pro
+sensor: IMX585
 sensor_temp_c:
-sub_seconds:
+sub_seconds: 450
 sub_count:
-filter: 
+filter: none
 processing: [Seestar (on-mount stack)]
 location: "Raleigh area, North Carolina"
 moon_illum_pct:
