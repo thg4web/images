@@ -13,11 +13,11 @@ sensor: IMX462
 sensor_temp_c:
 sub_seconds:
 sub_count:
-filter: 
+filter: none
 processing: [Seestar (single frame)]
 location: "Raleigh area, North Carolina"
 moon_illum_pct:
-object_type: solar system
+object_type: Moon
 sub_kind: Moon
 catalogs: []
 constellation: 
