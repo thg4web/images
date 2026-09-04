@@ -14,7 +14,7 @@ sensor_temp_c:
 sub_seconds: 450
 sub_count:
 filter: none
-processing: [Seestar (on-mount stack)]
+processing: [AstroWizard]
 location: "Raleigh area, North Carolina"
 moon_illum_pct:
 object_type: Nebula

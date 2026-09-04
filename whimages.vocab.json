@@ -71,6 +71,7 @@
     ],
     "processing" : [
       "50-panel mosaic in Microsoft ICE",
+      "AstroWizard",
       "GIMP",
       "Seestar (on-mount stack)",
       "Seestar (single frame)",
