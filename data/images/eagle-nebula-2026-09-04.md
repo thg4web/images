@@ -28,4 +28,4 @@ license: CC BY-NC 4.0
 master: "/Volumes/Starfish_Backup/scratch/MyWorks/M 16/hero/stacked-astrowizard-20260903-231106.jpg"
 ---
 
-Seestar S50 stack. Captured from the Raleigh area, North Carolina.
+Seestar S30 Pro stack. Captured from the Raleigh area, North Carolina. Processed with StackingWizard and AstroWizard

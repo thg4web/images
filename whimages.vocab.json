@@ -56,13 +56,18 @@
       "Raleigh area, North Carolina"
     ],
     "object_type" : [
+      "Asterism",
+      "Comet",
+      "Dark Nebula",
+      "Galaxy",
+      "Globular Cluster",
       "Moon",
+      "Nebula",
+      "Solar System",
+      "Star",
+      "Star Cluster",
       "Sun",
-      "galaxy",
-      "moon",
-      "nebula",
-      "solar system",
-      "star cluster"
+      "Variable Star"
     ],
     "processing" : [
       "50-panel mosaic in Microsoft ICE",
@@ -98,7 +103,9 @@
     ],
     "tags" : [
       "Moon",
+      "Nebula",
       "Sun",
+      "asterism",
       "eclipse",
       "galaxy",
       "moon",
