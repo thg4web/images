@@ -26,6 +26,7 @@ event_type:
 tags: [Nebula]
 license: CC BY-NC 4.0
 master: "/Volumes/Starfish_Backup/scratch/MyWorks/M 16/hero/stacked-astrowizard-20260903-231106.jpg"
+crop: "0.0163,0.1767,0.9427,0.6184"
 ---
 
 Seestar S30 Pro stack. Captured from the Raleigh area, North Carolina. Processed with StackingWizard and AstroWizard
