@@ -1,8 +1,8 @@
 ---
 id: jupiter
 name: Jupiter
-object_type: Planet
-sub_kind: 
+object_type: Solar System
+sub_kind: planet
 catalogs: []
 constellation: 
 ---

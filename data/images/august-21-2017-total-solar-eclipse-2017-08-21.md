@@ -17,8 +17,8 @@ filter: none
 processing: []
 location: "Athens, TN"
 moon_illum_pct:
-object_type: Sun
-sub_kind: 
+object_type: Solar System
+sub_kind: Sun
 catalogs: []
 constellation: 
 is_event: false

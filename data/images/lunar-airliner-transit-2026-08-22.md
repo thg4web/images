@@ -17,7 +17,7 @@ filter: none
 processing: [Seestar (single frame)]
 location: "Raleigh area, North Carolina"
 moon_illum_pct:
-object_type: Moon
+object_type: Solar System
 sub_kind: Moon
 catalogs: []
 constellation: 

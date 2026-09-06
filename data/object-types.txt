@@ -1,7 +1,5 @@
 Asterism
 Galaxy
-Moon
 Nebula
 Solar System
 Star Cluster
-Sun
