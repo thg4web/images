@@ -5,6 +5,11 @@
     "status"
   ],
   "scopes" : {
+    "Questar 3.5 RPi" : {
+      "filter" : "",
+      "processing" : "",
+      "sensor" : "RPi Camera"
+    },
     "Seestar S30 Pro" : {
       "filter" : "",
       "processing" : "Seestar (on-mount stack)",
@@ -56,6 +61,7 @@
       "Fuquay-Varina, North Carolina",
       "Lone Oak, Texas",
       "Raleigh NC",
+      "Raleigh area, North Carolina",
       "Raleigh, North Carolina"
     ],
     "object_type" : [
@@ -70,7 +76,8 @@
       "Star",
       "Star Cluster",
       "Sun",
-      "Variable Star"
+      "Variable Star",
+      "galaxy"
     ],
     "processing" : [
       "50-panel mosaic in Microsoft ICE",
@@ -85,6 +92,7 @@
     ],
     "scope" : [
       "Questar 3.5",
+      "Questar 3.5 RPi",
       "Questar 3.5\" (prime focus)",
       "Seestar S30 Pro",
       "Seestar S50"
