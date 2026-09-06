@@ -1,7 +1,7 @@
 ---
 id: orion-nebula-m42
 name: Orion Nebula - M42
-object_type: galaxy
+object_type: Nebula
 sub_kind: 
 catalogs: []
 constellation: 

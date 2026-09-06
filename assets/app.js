@@ -158,8 +158,21 @@
   function facetOpts(f) {
     if (f.opts) return f.opts;
     var counts = FEED.facets[f.optsFrom] || {};
-    return Object.keys(counts).sort().map(function (k) {
-      return [k, k.charAt(0).toUpperCase() + k.slice(1)];
+    /* Fold case-variant values together: "Nebula" and "nebula" are one
+       option. Key is the lower-cased value; label prefers a variant that
+       carries some capitalisation, then the higher count. */
+    var merged = {};
+    Object.keys(counts).forEach(function (k) {
+      var lk = String(k).toLowerCase(), n = counts[k] || 0;
+      var m = merged[lk] || (merged[lk] = { label: k, n: 0, cased: false });
+      m.n += n;
+      var cased = k !== lk;
+      if ((cased && !m.cased) || (cased === m.cased && n > counts[m.label])) m.label = k;
+      m.cased = m.cased || cased;
+    });
+    return Object.keys(merged).sort().map(function (lk) {
+      var lbl = merged[lk].label;
+      return [lk, lbl.charAt(0).toUpperCase() + lbl.slice(1)];
     });
   }
   function galMatch(im) {
@@ -167,7 +180,9 @@
     for (var i = 0; i < FACETS.length; i++) {
       f = FACETS[i];
       var arr = FILTERS[f.key];
-      if (arr.length && arr.indexOf(f.get(im)) < 0) return false;
+      var v = f.get(im);
+      v = (v == null) ? v : String(v).toLowerCase();
+      if (arr.length && arr.indexOf(v) < 0) return false;
     }
     if (FILTERS.q) {
       var c = im.classification;
