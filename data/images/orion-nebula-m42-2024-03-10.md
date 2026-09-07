@@ -1,7 +1,7 @@
 ---
-id: orion-nebula-m-41-2024-03-10
-title: Orion Nebula  M 41
-target: orion-nebula-m-41
+id: orion-nebula-m42-2024-03-10
+title: Orion Nebula - M42
+target: orion-nebula-m42
 session:
 status: published
 captured: 2024-03-10
@@ -19,8 +19,8 @@ location: "Raleigh, North Carolina"
 moon_illum_pct:
 object_type: Nebula
 sub_kind: 
-catalogs: [Messier]
-constellation: 
+catalogs: [M42]
+constellation: Orion
 is_event: false
 event_type: 
 tags: [Nebula]
