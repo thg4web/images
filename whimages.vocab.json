@@ -91,8 +91,7 @@
       "Star",
       "Star Cluster",
       "Sun",
-      "Variable Star",
-      "galaxy"
+      "Variable Star"
     ],
     "processing" : [
       "50-panel mosaic in Microsoft ICE",
@@ -121,20 +120,19 @@
       "archived"
     ],
     "sub_kind" : [
+      "Comet",
       "Moon",
+      "Planet",
       "Sun",
-      "comet",
       "emission",
       "emission \/ dark",
       "open",
-      "planet",
       "planetary",
       "spiral",
       "spiral (edge-on)",
       "supernova remnant"
     ],
     "tags" : [
-      "Astreism",
       "Galaxy",
       "Moon",
       "Nebula",
