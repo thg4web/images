@@ -5,6 +5,11 @@
     "status"
   ],
   "scopes" : {
+    "Meade 12\" LX90 ACF" : {
+      "filter" : "",
+      "processing" : "macOS",
+      "sensor" : ""
+    },
     "Questar 3.5 RPi" : {
       "filter" : "",
       "processing" : "",
@@ -91,6 +96,7 @@
       "v1"
     ],
     "scope" : [
+      "Meade 12\" LX90 ACF",
       "Questar 3.5",
       "Questar 3.5 RPi",
       "Questar 3.5\" (prime focus)",
@@ -108,14 +114,17 @@
       "emission",
       "emission \/ dark",
       "open",
+      "planet",
       "planetary",
       "spiral",
       "spiral (edge-on)",
       "supernova remnant"
     ],
     "tags" : [
+      "Galaxy",
       "Moon",
       "Nebula",
+      "Planet",
       "Sun",
       "asterism",
       "eclipse",
