@@ -6,9 +6,10 @@ session:
 status: published
 captured: 2024-03-10
 processed: 2026-09-04
+added: 2026-09-04
 revision: v1
 supersedes:
-scope: 
+scope: Seestar S50
 sensor: IMX462
 sensor_temp_c:
 sub_seconds:

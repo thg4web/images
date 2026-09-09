@@ -3,13 +3,14 @@ id: orion-nebula-m42-2026-09-05
 title: Orion Nebula - M42
 target: orion-nebula-m42
 session:
-status: removed
+status: archived
 captured: 2026-09-05
 processed: 2026-09-05
+added: 2026-09-05
 revision: v1
 supersedes:
-scope: 
-sensor: IMX462
+scope: Seestar S30 Pro Tele
+sensor: IMX585
 sensor_temp_c:
 sub_seconds:
 sub_count:
