@@ -14,7 +14,7 @@ sensor: IMX585
 sensor_temp_c:
 sub_seconds:
 sub_count:
-filter: 
+filter: none
 processing: [Seestar (on-mount stack)]
 location: "Raleigh, North Carolina"
 moon_illum_pct:
@@ -26,7 +26,7 @@ is_event: false
 event_type: 
 tags: [galaxy]
 license: CC BY-NC 4.0
-master: "seestar-s30-pro/deep-sky/m-45/stacked-513-m-45-10.0s-ircut-20260909-053000.jpg"
+master: "seestar-s30-pro/deep-sky/m-45/stacked-513-m-45-10-0s-ircut-20260909-053000.jpg"
 ---
 
 The Pleiades - My wife's favorite! This is a stacked image from 513 images - Taken during a 27.85 day old moon
