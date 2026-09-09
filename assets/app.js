@@ -146,9 +146,20 @@
   }
 
   var FILTERS = { type: [], event: [], filter: [], bucket: [], q: "", sort: "new" };
+  /* What the Gallery browses by. "Solar System" is a taxonomy bucket, not
+     something anyone looks for, so its children (Moon / Sun / planet / comet)
+     are promoted to first-class options. Deep-sky sub_kinds are morphology
+     (emission, spiral, open) and stay folded under their parent, or 12
+     nebulae would shatter into five thin buckets. The sidecars are unchanged:
+     this is display only. */
+  function browseType(im) {
+    var c = im.classification;
+    if (String(c.object_type || "").toLowerCase() === "solar system" && c.sub_kind)
+      return c.sub_kind;
+    return c.object_type;
+  }
   var FACETS = [
-    { key: "type", label: "Object type", get: function (im) { return im.classification.object_type; },
-      optsFrom: "object_type" },
+    { key: "type", label: "Object type", get: browseType, countFrom: browseType },
     { key: "event", label: "Special event", get: function (im) { return im.classification.event_type; },
       optsFrom: "event_type" },
     { key: "filter", label: "Filter", get: function (im) { return im.acquisition.filter; }, optsFrom: "filter" },
@@ -157,7 +168,17 @@
   ];
   function facetOpts(f) {
     if (f.opts) return f.opts;
-    var counts = FEED.facets[f.optsFrom] || {};
+    var counts;
+    if (f.countFrom) {
+      /* derived values aren't in facets.json — tally them from the images */
+      counts = {};
+      published().forEach(function (im) {
+        var v = f.countFrom(im);
+        if (v) counts[v] = (counts[v] || 0) + 1;
+      });
+    } else {
+      counts = FEED.facets[f.optsFrom] || {};
+    }
     /* Fold case-variant values together: "Nebula" and "nebula" are one
        option. Key is the lower-cased value; label prefers a variant that
        carries some capitalisation, then the higher count. */

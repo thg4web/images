@@ -18,8 +18,8 @@ filter: none
 processing: [Seestar (on-mount stack)]
 location: "Raleigh, North Carolina"
 moon_illum_pct:
-object_type: Moon
-sub_kind: 
+object_type: Solar System
+sub_kind: Moon
 catalogs: []
 constellation: 
 is_event: false

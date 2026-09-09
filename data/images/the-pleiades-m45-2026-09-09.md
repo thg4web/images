@@ -18,13 +18,13 @@ filter: none
 processing: [Seestar (on-mount stack)]
 location: "Raleigh, North Carolina"
 moon_illum_pct:
-object_type: galaxy
+object_type: Asterism
 sub_kind: 
 catalogs: []
 constellation: 
 is_event: false
 event_type: 
-tags: [Astreism]
+tags: [asterism]
 license: CC BY-NC 4.0
 master: "seestar-s30-pro/deep-sky/m-45/stacked-513-m-45-10-0s-ircut-20260909-053000.jpg"
 ---

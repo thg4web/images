@@ -1,8 +1,8 @@
 ---
 id: earthshine
 name: Earthshine
-object_type: Moon
-sub_kind: 
+object_type: Solar System
+sub_kind: Moon
 catalogs: []
 constellation: 
 ---
