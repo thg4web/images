@@ -1,11 +1,12 @@
 ---
 id: m45-the-pledies-2025-10-25
-title: M45  The Pledies
+title: The Pleiades - M45
 target: m45-the-pledies
 session:
 status: published
 captured: 2025-10-25
 processed: 2026-09-02
+added: 2026-09-02
 revision: v1
 supersedes:
 scope: Seestar S50
@@ -29,4 +30,4 @@ master: "seestar-archive/seestar-s50/deep-sky/m-045/2025-10-25/dso-stacked-750-m
 crop: "0.1925,0.1598,0.6256,0.5911"
 ---
 
-Seestar S50 stack, 20 s x 750 (4.2 h total), IR-cut filter. Captured from the Raleigh area, North Carolina.
+M45  The Pleiades  - Seestar S50 stack, 20 s x 750 (4.2 h total), IR-cut filter. Captured from the Raleigh area, North Carolina.
