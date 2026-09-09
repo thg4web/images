@@ -15,15 +15,25 @@
       "processing" : "",
       "sensor" : "RPi Camera"
     },
-    "Seestar S30 Pro" : {
+    "Seestar S30 Pro Tele" : {
       "filter" : "",
       "processing" : "Seestar (on-mount stack)",
-      "sensor" : "IMX662"
+      "sensor" : "IMX585"
+    },
+    "Seestar S30 Pro Wide" : {
+      "filter" : "",
+      "processing" : "Seestar (on-mount stack)",
+      "sensor" : "IMX586"
     },
     "Seestar S50" : {
       "filter" : "",
       "processing" : "Seestar (on-mount stack)",
       "sensor" : "IMX462"
+    },
+    "Sky-Watcher 8\" Classic" : {
+      "filter" : "",
+      "processing" : "Seestar (on-mount stack)",
+      "sensor" : ""
     }
   },
   "vocab" : {
@@ -101,7 +111,10 @@
       "Questar 3.5 RPi",
       "Questar 3.5\" (prime focus)",
       "Seestar S30 Pro",
-      "Seestar S50"
+      "Seestar S30 Pro Tele",
+      "Seestar S30 Pro Wide",
+      "Seestar S50",
+      "Sky-Watcher 8\" Classic"
     ],
     "status" : [
       "published",
