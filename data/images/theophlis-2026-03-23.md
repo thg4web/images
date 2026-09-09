@@ -1,7 +1,7 @@
 ---
-id: theophilus-and-gutenberg-craters-2026-03-23
-title: Theophilus and Gutenberg Craters
-target: theophilus-and-gutenberg-craters
+id: theophlis-2026-03-23
+title: Theophlis
+target: theophlis
 session:
 status: published
 captured: 2026-03-23
@@ -14,19 +14,19 @@ sensor: ASI120MC
 sensor_temp_c:
 sub_seconds:
 sub_count:
-filter: none
+filter: 
 processing: [Seestar (on-mount stack)]
 location: "Raleigh, North Carolina"
 moon_illum_pct:
 object_type: Solar System
-sub_kind: Moon
+sub_kind: 
 catalogs: []
 constellation: 
 is_event: false
 event_type: 
-tags: [Moon]
+tags: [Solar]
 license: CC BY-NC 4.0
-master: "lx90-asi120-archive/solar-system/Lunar/2026-03-23/2026-03-23-194559-theophilus-gutenberg-73-lunar-surface.jpg"
+master: "lx90-asi120-archive/solar-system/Lunar/2026-03-23/2026-03-23-194647-theophilus-73-lunar-surface.jpg"
 ---
 
-This was my first image taken on my Meade 12" LX90 withe AIS120MC camera
+Another great lunar closeup
