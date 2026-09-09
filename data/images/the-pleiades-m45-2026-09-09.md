@@ -1,6 +1,6 @@
 ---
 id: the-pleiades-m45-2026-09-09
-title: The Pleiades -  M45
+title: The Pleiades - M45
 target: the-pleiades-m45
 session:
 status: published

@@ -30,4 +30,4 @@ master: "/Volumes/Mini_RAID/MyWorks/Lunar_video/Video_Stacked_Lunar_20260907-062
 crop: "0.0004,0.2178,0.9996,0.5561"
 ---
 
-Earthshine, Over exposed to show this effect. The Earth is reflecting back on the Moon night side.
+Earthshine, overexposed to show the effect. The Earth is reflecting sunlight back onto the Moon's night side.

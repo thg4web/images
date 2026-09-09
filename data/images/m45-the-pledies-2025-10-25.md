@@ -30,4 +30,4 @@ master: "seestar-archive/seestar-s50/deep-sky/m-045/2025-10-25/dso-stacked-750-m
 crop: "0.1925,0.1598,0.6256,0.5911"
 ---
 
-M45  The Pleiades  - Seestar S50 stack, 20 s x 750 (4.2 h total), IR-cut filter. Captured from the Raleigh area, North Carolina.
+The Pleiades (M45). Seestar S50 stack, 20 s x 750 (4.2 h total), IR-cut filter. Captured from the Raleigh area, North Carolina.
