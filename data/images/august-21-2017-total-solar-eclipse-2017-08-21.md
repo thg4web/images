@@ -21,8 +21,8 @@ object_type: Solar System
 sub_kind: Sun
 catalogs: []
 constellation: 
-is_event: false
-event_type: 
+is_event: true
+event_type: solar eclipse
 tags: [Sun, eclipse, solar eclipse]
 license: CC BY-NC 4.0
 master: "questar-iphone-archive/2017-08-21-total-solar-eclipse.jpg"
