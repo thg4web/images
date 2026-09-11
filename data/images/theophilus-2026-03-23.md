@@ -26,7 +26,7 @@ is_event: false
 event_type: 
 tags: [Solar]
 license: CC BY-NC 4.0
-master: "lx90-asi120-archive/solar-system/Lunar/2026-03-23/2026-03-23-194647-theophilus-73-lunar-surface.jpg"
+master: "/Volumes/Mini_RAID/astro-archive/lx90-asi120-archive/solar-system/Lunar/2024-03-23/2026-03-23-194647-theophilus-73-lunar-surface.jpg"
 ---
 
 Another great lunar closeup

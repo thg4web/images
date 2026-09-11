@@ -26,7 +26,7 @@ is_event: false
 event_type: 
 tags: [nebula]
 license: CC BY-NC 4.0
-master: "seestar-archive/seestar-s30-pro/deep-sky/m-042/2026-09-05/stacked-31-m-42-10.0s-lp-20260905-060648.jpg"
+master: "/Volumes/Mini_RAID/astro-archive/seestar-s30-pro/deep-sky/m-042/2026-09-05/stacked-31-m-42-10.0s-lp-20260905-060648.jpg"
 ---
 
 Seestar S50 stack. Captured from the Raleigh, North Carolina.

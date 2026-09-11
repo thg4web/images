@@ -26,7 +26,7 @@ is_event: true
 event_type: lunar eclipse
 tags: [solar]
 license: CC BY-NC 4.0
-master: "seestar-archive/seestar-s50/solar-system/lunar/2025-03-13/stacked/2025-03-13-234506-Lunar-timelapse-RAW_10126.png"
+master: "/Volumes/Mini_RAID/astro-archive/seestar-s50/solar-system/lunar/2025-03-13/stacked/2025-03-13-234506-Lunar-timelapse-RAW_10126.png"
 ---
 
 A frame from the total lunar eclipse. See the session page for the write-up. This was taken for a frame in a time-lapse video of the eclipse.

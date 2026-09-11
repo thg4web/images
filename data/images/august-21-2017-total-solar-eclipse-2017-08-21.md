@@ -26,7 +26,7 @@ is_event: true
 event_type: solar eclipse
 tags: [Sun, eclipse, solar eclipse]
 license: CC BY-NC 4.0
-master: "questar-iphone-archive/2017-08-21-total-solar-eclipse.jpg"
+master: "/Volumes/Mini_RAID/astro-archive/questar-iphone-archive/2017-08-21-total-solar-eclipse.jpg"
 crop: "0.2599,0.0219,0.5484,0.6845"
 ---
 

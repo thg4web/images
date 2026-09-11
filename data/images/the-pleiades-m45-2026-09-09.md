@@ -26,7 +26,7 @@ is_event: false
 event_type: 
 tags: [asterism]
 license: CC BY-NC 4.0
-master: "seestar-s30-pro/deep-sky/m-45/stacked-513-m-45-10-0s-ircut-20260909-053000.jpg"
+master: "/Volumes/Mini_RAID/astro-archive/seestar-s30-pro/deep-sky/m-042/2026-09-09/stacked-513-m-45-10-0s-ircut-20260909-053000.jpg"
 ---
 
 The Pleiades - My wife's favorite! This is a stacked image from 513 images - Taken during a 27.85 day old moon

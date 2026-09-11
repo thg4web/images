@@ -26,7 +26,7 @@ is_event: false
 event_type: 
 tags: [Crater]
 license: CC BY-NC 4.0
-master: "lx90-asi120-archive/solar-system/Lunar/2024-03-24/2026-03-24-213044-theophils-cyrillus-catharina-55-lunar-surface.jpg"
+master: "/Volumes/Mini_RAID/astro-archive/lx90-asi120-archive/solar-system/Lunar/2024-03-24/2026-03-24-213044-theophils-cyrillus-catharina-55-lunar-surface.jpg"
 ---
 
 Classic lunar crater treo Theophilus Cyrilus Cathrania

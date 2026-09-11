@@ -26,7 +26,7 @@ is_event: false
 event_type: 
 tags: [asterism]
 license: CC BY-NC 4.0
-master: "seestar-archive/seestar-s50/deep-sky/m-045/2025-10-25/dso-stacked-750-m-45-mosaic-20.0s-20251025-080507.jpg"
+master: "/Volumes/Mini_RAID/astro-archive/seestar-s50/deep-sky/m-045/2025-10-25/dso-stacked-750-m-45-mosaic-20.0s-20251025-080507.jpg"
 crop: "0.1925,0.1598,0.6256,0.5911"
 ---
 

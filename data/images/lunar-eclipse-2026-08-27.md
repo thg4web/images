@@ -26,7 +26,7 @@ is_event: true
 event_type: lunar eclipse
 tags: [Moon]
 license: CC BY-NC 4.0
-master: "seestar-archive/seestar-s30-pro/solar-system/lunar/2026-08-27/hero/hero_n1100_v2_master.png"
+master: "/Volumes/Mini_RAID/astro-archive/seestar-s30-pro/solar-system/lunar/2026-08-27/hero/hero_n1100_v2_master.png"
 ---
 
 Hand-processed from Seestar S30 Pro data, captured from the Raleigh area, North Carolina.
