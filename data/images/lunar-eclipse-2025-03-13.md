@@ -6,6 +6,7 @@ session: 2025-03-13-total-lunar-eclipse
 status: published
 captured: 2025-03-13
 processed: 2025-03-13
+added: 2025-03-13
 revision: v1
 supersedes:
 scope: Seestar S50
@@ -28,4 +29,4 @@ license: CC BY-NC 4.0
 master: "seestar-archive/seestar-s50/solar-system/lunar/2025-03-13/stacked/2025-03-13-234506-Lunar-timelapse-RAW_10126.png"
 ---
 
-A frame from the total lunar eclipse. See the session page for the write-up.
+A frame from the total lunar eclipse. See the session page for the write-up. This was taken for a frame in a time-lapse video of the eclipse.

@@ -6,6 +6,7 @@ session:
 status: published
 captured: 2017-08-21
 processed: 2026-08-28
+added: 2026-08-28
 revision: v1
 supersedes:
 scope: Questar 3.5
@@ -29,4 +30,4 @@ master: "questar-iphone-archive/2017-08-21-total-solar-eclipse.jpg"
 crop: "0.2599,0.0219,0.5484,0.6845"
 ---
 
-Seestar S50 stack. Captured from the Athens, TN.
+iPhone  6 image. Captured from the Athens, TN. Aug 21, 2017. 
