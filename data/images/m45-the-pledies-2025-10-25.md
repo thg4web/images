@@ -20,7 +20,7 @@ location: "Raleigh area, North Carolina"
 moon_illum_pct: 15
 object_type: Asterism
 sub_kind: 
-catalogs: [messier]
+catalogs: [M45]
 constellation: 
 is_event: false
 event_type: 
