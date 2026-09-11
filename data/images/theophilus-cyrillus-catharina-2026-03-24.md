@@ -1,7 +1,7 @@
 ---
-id: theophilus-cyrilus-cathrania-craters-2026-03-24
-title: Theophilus Cyrilus Cathrania Craters
-target: theophilus-cyrilus-cathrania-craters
+id: theophilus-cyrillus-catharina-2026-03-24
+title: Theophilus, Cyrillus and Catharina
+target: theophilus-cyrillus-catharina
 session:
 status: published
 captured: 2026-03-24

@@ -1,7 +1,7 @@
 ---
-id: theophlis-2026-03-23
-title: Theophlis
-target: theophlis
+id: theophilus-2026-03-23
+title: Theophilus
+target: theophilus
 session:
 status: published
 captured: 2026-03-23
@@ -19,7 +19,7 @@ processing: [Seestar (on-mount stack)]
 location: "Raleigh, North Carolina"
 moon_illum_pct:
 object_type: Solar System
-sub_kind: 
+sub_kind: Moon
 catalogs: []
 constellation: 
 is_event: false

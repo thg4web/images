@@ -1,6 +1,6 @@
 ---
-id: theophilus-cyrilus-cathrania-craters
-name: Theophilus Cyrilus Cathrania Craters
+id: theophilus-cyrillus-catharina
+name: Theophilus, Cyrillus and Catharina
 object_type: Solar System
 sub_kind: Moon
 catalogs: []

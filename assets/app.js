@@ -16,13 +16,23 @@
   var sheetBody = document.getElementById("sheetBody");
   var loadingEl = document.getElementById("loading");
 
+  /* Escapes for both text nodes and attribute values — esc() output lands
+     inside double-quoted attributes (tile aria-labels, data-val, the search
+     box's value=), so quotes have to go too or a title containing one breaks
+     out of the attribute. The search box is user input, which made that an
+     injection vector rather than just a rendering bug. */
   function esc(s) {
-    return String(s == null ? "" : s).replace(/[&<>]/g, function (c) {
-      return { "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c];
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
     });
   }
   function published() { return FEED.images.filter(function (i) { return i.revision !== "frame"; }); }
-  function galleryList() { return published().filter(function (i) { return !i.supersedes || true; }); }
+  /* Every published frame, newest revisions included. The old body read
+     `!i.supersedes || true`, which is always true -- a filter that never
+     filtered. Nothing sets `supersedes` today, so hiding superseded frames
+     here would be a behaviour change on empty data; the honest version is to
+     show everything and say so. */
+  function galleryList() { return published(); }
 
   /* ---- media ---------------------------------------------------------- */
   function img(src, alt, cls) {
@@ -39,7 +49,7 @@
   function acqDL(a) {
     var rows = [
       ["Scope", a.scope],
-      ["Sensor", a.sensor + (a.sensor_temp_c != null ? " · " + a.sensor_temp_c + " °C" : "")],
+      ["Sensor", a.sensor ? (a.sensor + (a.sensor_temp_c != null ? " · " + a.sensor_temp_c + " °C" : "")) : ""],
       ["Exposure", a.exposure ? (a.exposure + (a.integration ? "  (" + a.integration + " total)" : "")) : (a.integration ? a.integration + " total" : "")],
       ["Filter", a.filter],
       ["Sky", a.location + (a.moon ? " · Moon " + a.moon : "")],
@@ -217,8 +227,19 @@
     if (FILTERS.sort === "old") a.sort(function (x, y) { return x.captured < y.captured ? -1 : 1; });
     else if (FILTERS.sort === "az") a.sort(function (x, y) { return x.title.localeCompare(y.title); });
     else if (FILTERS.sort === "int") {
+      /* An unknown/missing bucket used to make this comparator return NaN,
+         which leaves sort order undefined. Unknown now sorts last, and equal
+         buckets fall back to newest-first so the order is stable. */
       var o = { "under1h": 0, "1-3h": 1, "3h+": 2 };
-      a.sort(function (x, y) { return o[y.acquisition.integration_bucket] - o[x.acquisition.integration_bucket]; });
+      var rank = function (im) {
+        var v = o[im.acquisition.integration_bucket];
+        return v === undefined ? -1 : v;
+      };
+      a.sort(function (x, y) {
+        var d = rank(y) - rank(x);
+        if (d) return d;
+        return x.captured < y.captured ? 1 : (x.captured > y.captured ? -1 : 0);
+      });
     } else a.sort(function (x, y) { return x.captured < y.captured ? 1 : -1; });
     return a;
   }
@@ -266,31 +287,31 @@
     STATE.list = res.map(function (i) { return i.id; });
   }
 
+  /* A session has no single image to open an info sheet for, so it gets a
+     link-only tile; a loose event image is a normal image and goes through
+     tile(), which carries the Info button every other image tile has. */
+  function sessionTile(s) {
+    var first = byId[s.frames[0]];
+    var d = document.createElement("div");
+    d.className = "tile";
+    d.innerHTML =
+      '<div class="tile-imgwrap"></div>' +
+      (s.event_type ? '<span class="tile-badge">' + esc(s.event_type) + "</span>" : "") +
+      '<a class="tile-link" href="#/session/' + encodeURIComponent(s.id) + '" aria-label="' + esc(s.title) + '"></a>' +
+      '<div class="tile-body"><p class="tile-name">' + esc(s.title) + "</p>" +
+      '<p class="tile-meta">' + esc(s.date) + " · " + s.frames.length + " frame" + (s.frames.length === 1 ? "" : "s") + "</p></div>";
+    if (first) d.querySelector(".tile-imgwrap").appendChild(img(first.media.thumb, s.title));
+    return d;
+  }
   function renderEvents() {
-    var cards = FEED.sessions.map(function (s) {
-      var first = byId[s.frames[0]];
-      return '<div class="tile" data-hero="' + (first ? first.media.thumb : "") + '">' +
-        '<div class="tile-imgwrap"></div>' +
-        '<span class="tile-badge">' + esc(s.event_type) + "</span>" +
-        '<a class="tile-link" href="#/session/' + s.id + '" aria-label="' + esc(s.title) + '"></a>' +
-        '<div class="tile-body"><p class="tile-name">' + esc(s.title) + "</p>" +
-        '<p class="tile-meta">' + esc(s.date) + " · " + s.frames.length + " frame" + (s.frames.length === 1 ? "" : "s") + "</p></div></div>";
-    });
-    var loose = published().filter(function (i) { return i.classification.is_event && !i.session; });
-    loose.forEach(function (im) {
-      cards.push('<div class="tile" data-hero="' + im.media.thumb + '">' +
-        '<div class="tile-imgwrap"></div>' +
-        '<span class="tile-badge">' + esc(im.classification.event_type) + "</span>" +
-        '<a class="tile-link" href="#/image/' + im.id + '" aria-label="' + esc(im.title) + '"></a>' +
-        '<div class="tile-body"><p class="tile-name">' + esc(im.title) + "</p>" +
-        '<p class="tile-meta">' + String(im.captured).slice(0, 4) + "</p></div></div>");
-    });
     V.events.innerHTML = '<p class="crumb">Events</p>' +
       '<p class="events-intro">Nights built around something happening — an eclipse, a comet, a close pass. Each keeps its own page with the frames from that session.</p>' +
-      '<div class="grid">' + cards.join("") + "</div>";
-    V.events.querySelectorAll(".tile").forEach(function (t) {
-      if (t.dataset.hero) t.querySelector(".tile-imgwrap").appendChild(img(t.dataset.hero, ""));
-    });
+      '<div class="grid"></div>';
+    var g = V.events.querySelector(".grid");
+    FEED.sessions.forEach(function (s) { g.appendChild(sessionTile(s)); });
+    published()
+      .filter(function (i) { return i.classification.is_event && !i.session; })
+      .forEach(function (im) { g.appendChild(tile(im)); });
   }
 
   function renderImage(id) {
@@ -304,7 +325,10 @@
       .sort(function (a, b) { return a.captured < b.captured ? 1 : -1; });
     var strip = "";
     if (versions.length > 1) {
-      strip = '<div class="progression"><h3>Versions</h3><div class="prog-row">' +
+      /* These are other captures of the same target, not revisions of this
+         image -- target `moon` holds two eclipses and two phases. The target
+         page already calls the same list a progression; match it. */
+      strip = '<div class="progression"><h3>Other captures of this target</h3><div class="prog-row">' +
         versions.map(function (v) {
           return '<a class="prog-item' + (v.id === im.id ? " is-current" : "") + '" href="#/image/' + v.id + '">' +
             '<div class="prog-thumb"></div><p class="prog-cap">' + esc(v.revision) + " · " + String(v.captured).slice(5) + "</p></a>";
@@ -343,6 +367,18 @@
     var imgs = FEED.images.filter(function (i) { return i.target === tid && i.revision !== "frame"; })
       .sort(function (a, b) { return a.captured < b.captured ? 1 : -1; });
     var best = byId[t.current_best] || imgs[0];
+    /* A target no image points at has no best image; this used to fall through
+       to best.id and throw, blanking the page. `whimages check` now warns about
+       orphan targets, but the page still has to survive one. */
+    if (!best) {
+      V.target.innerHTML =
+        '<p class="crumb"><a href="#/gallery">Gallery</a> / ' + esc(t.name) + "</p>" +
+        '<div class="identity"><h1 class="detail-title" style="margin-top:0">' + esc(t.name) + "</h1>" +
+        '<p class="kind">' + esc(t.kind || "") + "</p>" +
+        '<p class="detail-prose" style="margin-top:0.9rem">' + esc(t.description || "") + "</p></div>" +
+        '<p class="empty">No images for this target yet.</p>';
+      return;
+    }
     var strip = "";
     if (imgs.length > 1) {
       strip = '<div class="progression"><h3>Progression</h3><div class="prog-row">' +
@@ -365,6 +401,15 @@
     if (strip) V.target.querySelectorAll(".prog-thumb").forEach(function (el, i) { el.appendChild(img(imgs[i].media.thumb, imgs[i].title)); });
   }
 
+  /* Same skip-the-blanks rule acqDL() uses, so a session with no moon or
+     conditions logged doesn't render empty definition rows. */
+  function sessionDL(s) {
+    var sky = [s.location, s.conditions].filter(Boolean).join(" · ");
+    var rows = [["Scope", s.scope], ["Event", s.event_type], ["Sky", sky], ["Moon", s.moon]];
+    var out = "<dl>";
+    rows.forEach(function (r) { if (r[1]) out += "<dt>" + esc(r[0]) + "</dt><dd>" + esc(r[1]) + "</dd>"; });
+    return out + "</dl>";
+  }
   function renderSession(id) {
     var s = FEED.sessions.filter(function (x) { return x.id === id; })[0];
     if (!s) { location.hash = "#/events"; return; }
@@ -373,15 +418,13 @@
     V.session.innerHTML =
       '<p class="crumb"><a href="#/events">Events</a> / ' + esc(s.title) + "</p>" +
       '<h1 class="detail-title" style="margin-top:0">' + esc(s.title) + "</h1>" +
-      '<p class="detail-sub">' + esc(s.date) + " · " + esc(s.location) + " · " + esc(s.conditions) + "</p>" +
+      '<p class="detail-sub">' + [s.date, s.location, s.conditions].filter(Boolean).map(esc).join(" · ") + "</p>" +
       '<div class="img-hero">' +
         '<a class="media-link" href="' + (hero ? hero.media.full : "#") + '" target="_blank" rel="noopener noreferrer" aria-label="Open the full-resolution image"><span class="media-slot"></span></a>' +
         '</div>' +
       '<div class="detail-prose" style="margin-top:1.2rem">' + (s.body_html || "") + "</div>" +
       '<p class="frames-h">Frames from this session</p><div class="grid"></div>' +
-      '<div class="acq"><h3>Acquisition &middot; session</h3><dl>' +
-        "<dt>Scope</dt><dd>" + esc(s.scope) + "</dd><dt>Event</dt><dd>" + esc(s.event_type) + "</dd>" +
-        "<dt>Sky</dt><dd>" + esc(s.location) + " · " + esc(s.conditions) + "</dd><dt>Moon</dt><dd>" + esc(s.moon) + "</dd></dl></div>";
+      '<div class="acq"><h3>Acquisition &middot; session</h3>' + sessionDL(s) + "</div>";
     if (hero) V.session.querySelector(".media-slot").replaceWith(img(hero.media.web, hero.title));
     var g = V.session.querySelector(".grid");
     frames.forEach(function (f) { g.appendChild(tile(f)); });
