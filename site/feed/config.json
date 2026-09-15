@@ -1,0 +1,15 @@
+{
+  "owner_name": "Aaron Henderson",
+  "site_name": "Henderson Astronomy",
+  "site_domain": "images.thgnetworks.com",
+  "contact_email": "image-permission@thgnetworks.com",
+  "tagline": "The astrophotography gallery",
+  "bio": "I shoot the night sky from a backyard in the Raleigh area of North Carolina, mostly with a ZWO Seestar S50 and an S30 Pro. This gallery is the finished work, each frame with the acquisition data behind it, and one picked out each day.",
+  "license": {
+    "key": "cc-by-nc-4",
+    "label": "CC BY-NC 4.0",
+    "url": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "rights_sentence": "free for non-commercial use with credit",
+    "commercial_note": "Commercial use needs permission in advance."
+  }
+}

@@ -29,4 +29,4 @@ license: CC BY-NC 4.0
 master: "sw200p-iphone-15-archive/solar-system/lunar/2025-05-04/2025-05-04-lunar-x-v-iphone-15.png"
 ---
 
-The lunar X and Lunar V are happen every month, here is one I captured in May 2025
+The lunar X and Lunar V are happen every month, here is one I captured in May 2025. See if you can find the X and the V for yourself.
