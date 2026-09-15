@@ -38,5 +38,5 @@
  {"id":"jupiter","name":"Jupiter","kind":"Solar System · Planet","catalogs":[],"constellation":null,"description":"Jupiter.","current_best":"jupiter-2017-06-03","progression":["jupiter-2017-06-03"]},
  {"id":"ngc7000","name":"North American Nebula - NGC 7000","kind":"Nebula · Cygnus","catalogs":["NGC 7000","Caldwell 20"],"constellation":"Cygnus","description":"North American Nebula - NGC 7000.","current_best":"ngc7000-2026-08-18","progression":["ngc7000-2026-08-18"]},
  {"id":"lunar-airliner-transit","name":"Lunar Airliner Transit","kind":"Solar System · Moon","catalogs":[],"constellation":null,"description":"An airliner crossing the face of the Moon — a single frame, caught on the 22nd of August 2026.","current_best":"lunar-airliner-transit-2026-08-22","progression":["lunar-airliner-transit-2026-08-22"]},
- {"id":"first-milky-way","name":"First Milky Way","kind":"Milky Way","catalogs":[],"constellation":null,"description":"First Milky Way.","current_best":"first-milky-way-2026-09-14","progression":["first-milky-way-2026-09-14"]}
+ {"id":"first-milky-way","name":"First Milky Way","kind":"Milky Way","catalogs":[],"constellation":null,"description":"First Milky Way.","current_best":null,"progression":[]}
 ]
