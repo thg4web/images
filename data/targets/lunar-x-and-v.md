@@ -1,10 +1,10 @@
 ---
-id: lunar-x-and-y
-name: Lunar X and Y
+id: lunar-x-and-v
+name: Lunar X and V
 object_type: Moon
 sub_kind: 
 catalogs: []
 constellation: 
 ---
 
-Lunar X and Y.
+Lunar X and V.
