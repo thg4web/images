@@ -37,5 +37,6 @@
  {"id":"jupiter","name":"Jupiter","kind":"Solar System · Planet","catalogs":[],"constellation":null,"description":"Jupiter.","current_best":"jupiter-2017-06-03","progression":["jupiter-2017-06-03"]},
  {"id":"ngc7000","name":"North American Nebula - NGC 7000","kind":"Nebula · Cygnus","catalogs":["NGC 7000","Caldwell 20"],"constellation":"Cygnus","description":"North American Nebula - NGC 7000.","current_best":"ngc7000-2026-08-18","progression":["ngc7000-2026-08-18"]},
  {"id":"lunar-airliner-transit","name":"Lunar Airliner Transit","kind":"Solar System · Moon","catalogs":[],"constellation":null,"description":"An airliner crossing the face of the Moon — a single frame, caught on the 22nd of August 2026.","current_best":"lunar-airliner-transit-2026-08-22","progression":["lunar-airliner-transit-2026-08-22"]},
- {"id":"1st-quarter-moon","name":"1st Quarter Moon","kind":"Solar System · Moon","catalogs":[],"constellation":null,"description":"1st Quarter Moon.","current_best":"1st-quarter-moon-2025-04-04","progression":["1st-quarter-moon-2025-04-04"]}
+ {"id":"1st-quarter-moon","name":"1st Quarter Moon","kind":"Solar System · Moon","catalogs":[],"constellation":null,"description":"1st Quarter Moon.","current_best":null,"progression":[]},
+ {"id":"lunar-x-and-y","name":"Lunar X and Y","kind":"Moon","catalogs":[],"constellation":null,"description":"Lunar X and Y.","current_best":"lunar-x-and-y-2025-05-04","progression":["lunar-x-and-y-2025-05-04"]}
 ]

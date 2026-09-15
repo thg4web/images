@@ -1,5 +1,5 @@
 {
-  "object_type": {"Galaxy": 10,"Nebula": 13,"Solar System": 15,"Moon": 1,"Star Cluster": 3,"Asterism": 2},
+  "object_type": {"Galaxy": 10,"Nebula": 13,"Solar System": 14,"Moon": 2,"Star Cluster": 3,"Asterism": 2},
   "event_type": {"lunar eclipse": 2,"solar eclipse": 2,"comet": 1},
   "constellation": {"Coma Berenices": 2,"Sagittarius": 1,"Monoceros": 1,"Orion": 2,"Virgo": 1,"Ursa Major": 2,"Taurus": 2,"Cygnus": 2,"Andromeda": 1,"Perseus": 1,"Vulpecula": 1,"Cancer": 1,"Triangulum": 1,"Libra": 1,"Scutum": 1,"Leo": 1,"Cassiopeia": 1,"Canes Venatici": 1},
   "filter": {"none": 28,"IR-cut": 11,"light-pollution": 5},
