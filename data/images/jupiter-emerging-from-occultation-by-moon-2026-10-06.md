@@ -14,8 +14,8 @@ sensor: IMX585
 sensor_temp_c:
 sub_seconds:
 sub_count:
-filter: 
-processing: [Seestar (on-mount stack)]
+filter: none
+processing: [Video Capture]
 location: "Raleigh, North Carolina"
 moon_illum_pct:
 object_type: Moon
@@ -29,4 +29,4 @@ license: CC BY-NC 4.0
 master: "~/Downloads/2026-10-06-jupiter-emerging-dark-limb-moon.jpg"
 ---
 
-Seestar S50 Pro Tele stack. Captured from the Raleigh, North Carolina.
+Seestar S50 Pro Tele stack. Captured from Fuquay-Varina, North Carolina.

@@ -1,57 +1,57 @@
 {
-  "closed": [
+  "closed" : [
     "license",
     "status"
   ],
-  "scopes": {
-    "Meade 12\" LX90 ACF": {
-      "filter": "",
-      "processing": "macOS",
-      "sensor": ""
+  "scopes" : {
+    "Meade 12\" LX90 ACF" : {
+      "filter" : "",
+      "processing" : "macOS",
+      "sensor" : ""
     },
-    "Questar 3.5 RPi": {
-      "filter": "",
-      "processing": "",
-      "sensor": "RPi Camera"
+    "Questar 3.5 RPi" : {
+      "filter" : "",
+      "processing" : "",
+      "sensor" : "RPi Camera"
     },
-    "Seestar S30": {
-      "filter": "",
-      "processing": "Seestar (on-mount stack)",
-      "sensor": "IMX662"
+    "Seestar S30" : {
+      "filter" : "",
+      "processing" : "Seestar (on-mount stack)",
+      "sensor" : "IMX662"
     },
-    "Seestar S30 Pro Tele": {
-      "filter": "",
-      "processing": "Seestar (on-mount stack)",
-      "sensor": "IMX585"
+    "Seestar S30 Pro Tele" : {
+      "filter" : "",
+      "processing" : "Seestar (on-mount stack)",
+      "sensor" : "IMX585"
     },
-    "Seestar S30 Pro Wide": {
-      "filter": "",
-      "processing": "Seestar (on-mount stack)",
-      "sensor": "IMX586"
+    "Seestar S30 Pro Wide" : {
+      "filter" : "",
+      "processing" : "Seestar (on-mount stack)",
+      "sensor" : "IMX586"
     },
-    "Seestar S50": {
-      "filter": "",
-      "processing": "Seestar (on-mount stack)",
-      "sensor": "IMX462"
+    "Seestar S50" : {
+      "filter" : "",
+      "processing" : "Seestar (on-mount stack)",
+      "sensor" : "IMX462"
     },
-    "Seestar S50 Pro Tele": {
-      "filter": "",
-      "processing": "Seestar (on-mount stack)",
-      "sensor": "IMX585"
+    "Seestar S50 Pro Tele" : {
+      "filter" : "",
+      "processing" : "Seestar (on-mount stack)",
+      "sensor" : "IMX585"
     },
-    "Seestar S50 Pro Wide": {
-      "filter": "",
-      "processing": "Seestar (on-mount stack)",
-      "sensor": "IMX586"
+    "Seestar S50 Pro Wide" : {
+      "filter" : "",
+      "processing" : "Seestar (on-mount stack)",
+      "sensor" : "IMX586"
     },
-    "Sky-Watcher 8\" Classic": {
-      "filter": "",
-      "processing": "Seestar (on-mount stack)",
-      "sensor": ""
+    "Sky-Watcher 8\" Classic" : {
+      "filter" : "",
+      "processing" : "Seestar (on-mount stack)",
+      "sensor" : ""
     }
   },
-  "vocab": {
-    "constellation": [
+  "vocab" : {
+    "constellation" : [
       "Andromeda",
       "Cancer",
       "Canes Venatici",
@@ -71,20 +71,20 @@
       "Virgo",
       "Vulpecula"
     ],
-    "event_type": [
+    "event_type" : [
       "comet",
       "lunar eclipse",
       "solar eclipse"
     ],
-    "filter": [
+    "filter" : [
       "IR-cut",
       "light-pollution",
       "none"
     ],
-    "license": [
+    "license" : [
       "CC BY-NC 4.0"
     ],
-    "location": [
+    "location" : [
       "Asheville, North Carolina",
       "Athens, TN",
       "Fuquay-Varina, North Carolina",
@@ -93,12 +93,13 @@
       "Raleigh area, North Carolina",
       "Raleigh, North Carolina"
     ],
-    "object_type": [
+    "object_type" : [
       "Asterism",
       "Comet",
       "Dark Nebula",
       "Galaxy",
       "Globular Cluster",
+      "Milky Way",
       "Moon",
       "Nebula",
       "Planet",
@@ -108,18 +109,19 @@
       "Sun",
       "Variable Star"
     ],
-    "processing": [
+    "processing" : [
       "50-panel mosaic in Microsoft ICE",
       "AstroWizard",
       "GIMP",
       "Seestar (on-mount stack)",
       "Seestar (single frame)",
-      "Siril"
+      "Siril",
+      "Video Capture"
     ],
-    "revision": [
+    "revision" : [
       "v1"
     ],
-    "scope": [
+    "scope" : [
       "Meade 12\" LX90 ACF",
       "Questar 3.5",
       "Questar 3.5 RPi",
@@ -130,31 +132,36 @@
       "Seestar S50",
       "Sky-Watcher 8\" Classic"
     ],
-    "status": [
+    "status" : [
       "published",
       "archived"
     ],
-    "sub_kind": [
+    "sub_kind" : [
       "Comet",
       "Moon",
       "Planet",
       "Sun",
       "emission",
-      "emission / dark",
+      "emission \/ dark",
       "open",
       "planetary",
       "spiral",
       "spiral (edge-on)",
       "supernova remnant"
     ],
-    "tags": [
+    "tags" : [
+      "Crater",
       "Galaxy",
+      "Lunar V",
+      "Lunar X",
       "Moon",
       "Nebula",
       "Planet",
+      "Solar",
       "Sun",
       "asterism",
       "eclipse",
+      "emission nebula",
       "galaxy",
       "moon",
       "mosaic",
