@@ -1,6 +1,6 @@
 ---
 id: jupiter-emerging-eclipse-of-moon-2026-10-06
-title: Jupiter Emerging Eclipse of Moon
+title: Jupiter Emerging Occultation by Moon
 target: jupiter-emerging-eclipse-of-moon
 session:
 status: published
@@ -14,7 +14,7 @@ sensor: IMX585
 sensor_temp_c:
 sub_seconds:
 sub_count:
-filter: 
+filter: none
 processing: [Seestar (on-mount stack)]
 location: "Raleigh, North Carolina"
 moon_illum_pct:
@@ -23,7 +23,7 @@ sub_kind: Moon
 catalogs: []
 constellation: 
 is_event: true
-event_type: Jupiter Eclipsed by Moon
+event_type: Jupiter Occulted by Moon
 tags: [Moon]
 license: CC BY-NC 4.0
 master: "~/Downloads/2026-10-06-jupiter-emerging-dark-limb-moon.jpg"
