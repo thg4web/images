@@ -26,7 +26,7 @@ is_event: false
 event_type: 
 tags: [Moon]
 license: CC BY-NC 4.0
-master: "/Volumes/Mini_RAID/MyWorks/Lunar_video/Video_Stacked_Lunar_20260907-062727.jpg"
+master: "/Volumes/mini-raid/MyWorks/Lunar_video/Video_Stacked_Lunar_20260907-062727.jpg"
 crop: "0.0004,0.2178,0.9996,0.5561"
 ---
 

@@ -6,6 +6,7 @@ session:
 status: published
 captured: 2026-09-04
 processed: 2026-09-04
+added: 2026-09-04
 revision: v1
 supersedes:
 scope: Seestar S30 Pro
@@ -25,7 +26,7 @@ is_event: false
 event_type: 
 tags: [Nebula]
 license: CC BY-NC 4.0
-master: "/Volumes/Mini_RAID/astro-archive/seestar-s30-pro/deep-sky/m-016/2026-09-03/stacked-astrowizard-20260903-231106.jpg"
+master: "/Volumes/mini-raid/astro-archive/seestar-s30-pro/deep-sky/m-016/2026-09-03/stacked-astrowizard-20260903-231106.jpg"
 crop: "0.0163,0.1767,0.9427,0.6184"
 ---
 
