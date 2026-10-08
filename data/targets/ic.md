@@ -1,0 +1,10 @@
+---
+id: ic
+name: Elephant's Trunk Nebula - IC 1396
+object_type: Nebula
+sub_kind: 
+catalogs: [IC]
+constellation: 
+---
+
+Elephant's Trunk Nebula - IC 1396.
