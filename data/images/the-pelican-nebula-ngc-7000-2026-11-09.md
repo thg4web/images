@@ -1,6 +1,6 @@
 ---
 id: the-pelican-nebula-ngc-7000-2026-11-09
-title: The Pelican Nebula - NGC 7000
+title: The Pelican Nebula - IC 5070
 target: the-pelican-nebula-ngc-7000
 session:
 status: published
@@ -14,7 +14,7 @@ sensor: IMX585
 sensor_temp_c:
 sub_seconds:
 sub_count:
-filter: 
+filter: none
 processing: [Seestar (on-mount stack)]
 location: "Raleigh, North Carolina"
 moon_illum_pct:
