@@ -12,19 +12,19 @@ supersedes:
 scope: Seestar S50 Pro Tele
 sensor: IMX585
 sensor_temp_c:
-sub_seconds:
-sub_count:
-filter: none
+sub_seconds: 60
+sub_count: 240
+filter: light-pollution
 processing: [Seestar (on-mount stack)]
 location: "Raleigh, North Carolina"
-moon_illum_pct:
+moon_illum_pct: 0
 object_type: Nebula
 sub_kind: 
 catalogs: []
-constellation: 
+constellation: Cygnus
 is_event: false
 event_type: 
-tags: [Nebula]
+tags: [Nebula, emission nebula, H II]
 license: CC BY-NC 4.0
 master: "/Volumes/mini-raid/astro-archive/seestar-s50-pro/deep-sky/ngc-7000/2026-11-08/Enhanced_Stacked_240_NGC 7000_60.0s_LP_20261108-231208.png"
 ---

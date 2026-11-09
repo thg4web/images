@@ -56,6 +56,7 @@
       "Cancer",
       "Canes Venatici",
       "Cassiopeia",
+      "Cepheus",
       "Coma Berenices",
       "Cygnus",
       "Leo",
@@ -72,6 +73,7 @@
       "Vulpecula"
     ],
     "event_type" : [
+      "Jupiter Occultated by Moon",
       "comet",
       "lunar eclipse",
       "solar eclipse"
@@ -130,6 +132,7 @@
       "Seestar S30 Pro Tele",
       "Seestar S30 Pro Wide",
       "Seestar S50",
+      "Seestar S50 Pro Tele",
       "Sky-Watcher 8\" Classic"
     ],
     "status" : [
@@ -152,6 +155,7 @@
     "tags" : [
       "Crater",
       "Galaxy",
+      "H II",
       "Lunar V",
       "Lunar X",
       "Moon",
