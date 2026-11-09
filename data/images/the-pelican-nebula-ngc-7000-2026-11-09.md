@@ -29,13 +29,13 @@ license: CC BY-NC 4.0
 master: "/Volumes/mini-raid/astro-archive/seestar-s50-pro/deep-sky/ngc-7000/2026-11-08/Enhanced_Stacked_240_NGC 7000_60.0s_LP_20261108-231208.png"
 ---
 
-# The Pelican Nebula (IC 5070)
+# **The Pelican Nebula (IC 5070)**
 
 The **Pelican Nebula** is a prominent emission nebula and H II region located in the constellation **Cygnus** (the Swan). Situated approximately **1,800 light-years** from Earth, it spans roughly 30 light-years across and is part of a larger star-forming complex known as Westerhout 80, which also includes the nearby North America Nebula.
 
 The nebula earns its name from its striking resemblance to a pelican, a silhouette created by the interplay of glowing ionized hydrogen gas and foreground clouds of dark, cold interstellar dust.
 
-## Stellar Physics & Formation
+## **Stellar Physics & Formation**
 
 The region is powered by intense ultraviolet radiation from young, energetic stars, most notably **HD 199579**, a B-type main-sequence star about ten times more massive than our Sun. This radiation creates an **ionization front**—a boundary where the radiation transforms cold gas into hot, glowing plasma.
 
@@ -49,4 +49,3 @@ Because the nebula is actively evolving, its appearance is temporary; over milli
 - [Wikipedia](https://en.wikipedia.org/wiki/Pelican_Nebula)
 - [NASA APOD](https://apod.nasa.gov/apod/ap061130.html)
 - [AstroBackyard](https://astrobackyard.com/ic-5070-the-pelican-nebula/)
-- [Telescope Nerd](https://www.telescopenerd.com/celestial-objects/pelican-nebula.htm)
