@@ -9,8 +9,8 @@ processed: 2026-11-17
 added: 2026-11-17
 revision: v1
 supersedes:
-scope: Questar 3.5 RPi
-sensor: RPi Camera
+scope: Questar
+sensor: ASI662MC
 sensor_temp_c:
 sub_seconds:
 sub_count:
