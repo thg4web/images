@@ -1,7 +1,7 @@
 {
   "object_type": {"Nebula": 19,"Galaxy": 10,"Solar System": 14,"Moon": 4,"Star Cluster": 3,"Asterism": 2},
   "event_type": {"Jupiter Occultated by Moon": 1,"lunar eclipse": 2,"solar eclipse": 2,"comet": 1},
-  "constellation": {"Orion": 3,"Coma Berenices": 2,"Sagittarius": 1,"Monoceros": 1,"Virgo": 1,"Ursa Major": 2,"Cygnus": 3,"Taurus": 2,"Andromeda": 1,"Cepheus": 1,"Perseus": 1,"Vulpecula": 1,"Cancer": 1,"Triangulum": 1,"Libra": 1,"Scutum": 1,"Cassiopeia": 2,"Leo": 1,"Canes Venatici": 1},
+  "constellation": {"Orion": 3,"Coma Berenices": 2,"Serpens": 1,"Sagittarius": 1,"Monoceros": 1,"Virgo": 1,"Ursa Major": 2,"Cygnus": 3,"Taurus": 2,"Andromeda": 1,"Cepheus": 1,"Perseus": 1,"Vulpecula": 1,"Cancer": 1,"Triangulum": 1,"Libra": 1,"Scutum": 1,"Cassiopeia": 2,"Leo": 1,"Canes Venatici": 1},
   "filter": {"light-pollution": 10,"none": 30,"IR-cut": 12},
   "integration_bucket": {"1-3h": 8,"under1h": 41,"3h+": 3},
   "year": {"2026": 35,"2025": 10,"2024": 4,"2017": 3}
