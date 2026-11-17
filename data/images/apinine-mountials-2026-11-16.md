@@ -1,6 +1,6 @@
 ---
 id: apinine-mountials-2026-11-16
-title: Apinine Mountials 
+title: Apennine Mountains
 target: apinine-mountials
 session:
 status: published
@@ -14,7 +14,7 @@ sensor: RPi Camera
 sensor_temp_c:
 sub_seconds:
 sub_count:
-filter: 
+filter: none
 processing: [Seestar (on-mount stack)]
 location: "Raleigh, North Carolina"
 moon_illum_pct:
