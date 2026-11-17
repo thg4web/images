@@ -20,7 +20,7 @@ location: "Raleigh, North Carolina"
 moon_illum_pct: 0
 object_type: Nebula
 sub_kind: 
-catalogs: []
+catalogs: [NGC 7000, Caldwell 20]
 constellation: Cygnus
 is_event: false
 event_type: 

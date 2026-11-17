@@ -20,7 +20,7 @@ location: "Raleigh, North Carolina"
 moon_illum_pct:
 object_type: Nebula
 sub_kind: 
-catalogs: []
+catalogs: [IC 1805]
 constellation: Cassiopeia
 is_event: false
 event_type: 

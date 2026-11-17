@@ -20,8 +20,8 @@ location: "Raleigh, North Carolina"
 moon_illum_pct:
 object_type: Nebula
 sub_kind: 
-catalogs: []
-constellation: 
+catalogs: [M42]
+constellation: Orion
 is_event: false
 event_type: 
 tags: [nebula]

@@ -71,6 +71,7 @@
       "Perseus",
       "Sagittarius",
       "Scutum",
+      "Serpens",
       "Taurus",
       "Triangulum",
       "Ursa Major",
@@ -160,9 +161,11 @@
       "supernova remnant"
     ],
     "tags" : [
+      "ALBATEGNIUS",
       "Crater",
       "Galaxy",
       "H II",
+      "HIPPARCHUS",
       "Lunar V",
       "Lunar X",
       "Moon",

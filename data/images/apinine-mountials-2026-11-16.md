@@ -26,7 +26,7 @@ is_event: false
 event_type: 
 tags: [Moon]
 license: CC BY-NC 4.0
-master: "questar-asi662-archive/Stacked_LunarSurface_183MC_20261116-211759.png"
+master: "questar-asi183-archive/solar-system/lunar/2026-11-16/Stacked_LunarSurface_183MC_20261116-211759.png"
 ---
 
 I'm having a blast getting to know my new lunar imaging setup:  
