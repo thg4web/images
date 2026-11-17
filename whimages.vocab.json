@@ -9,15 +9,15 @@
       "processing" : "macOS",
       "sensor" : ""
     },
+    "Questar 3.5 ASI183MC" : {
+      "filter" : "",
+      "processing" : "",
+      "sensor" : " ASI183MC"
+    },
     "Questar 3.5 RPi" : {
       "filter" : "",
       "processing" : "",
       "sensor" : "RPi Camera"
-    },
-    "Questar ASI 662" : {
-      "filter" : "",
-      "processing" : "ASI Air Stacking",
-      "sensor" : "ASI662MC"
     },
     "Seestar S30" : {
       "filter" : "",
@@ -132,9 +132,9 @@
       "Meade 12\" LX90 ACF",
       "Questar",
       "Questar 3.5",
+      "Questar 3.5 ASI183MC",
       "Questar 3.5 RPi",
       "Questar 3.5\" (prime focus)",
-      "Questar ASI 662",
       "Seestar S30 Pro",
       "Seestar S30 Pro Tele",
       "Seestar S30 Pro Wide",

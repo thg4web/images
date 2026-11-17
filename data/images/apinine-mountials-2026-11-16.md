@@ -10,7 +10,7 @@ added: 2026-11-17
 revision: v1
 supersedes:
 scope: Questar
-sensor:  ASI183MC
+sensor: ASI183MC
 sensor_temp_c:
 sub_seconds:
 sub_count:
@@ -32,7 +32,7 @@ master: "questar-asi662-archive/Stacked_LunarSurface_183MC_20261116-211759.png"
 I'm having a blast getting to know my new lunar imaging setup:  
   
 1) **Telescope:** Questar 3.5. It's not new. I've had it since 1994, and it's still the best small scope I've ever owned.  
-2) **Camera:** ZWO ASI662MC (August 2026)  
+2) **Camera:** ZWO  ASI183MC (August 2026)  
 3) **Controller:** ASIAIR Plus (March 2026)  
   
 A 30-year-old telescope with modern electronics is a great combination. I'll share some images soon.
