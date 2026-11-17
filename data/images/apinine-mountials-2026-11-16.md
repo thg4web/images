@@ -10,7 +10,7 @@ added: 2026-11-17
 revision: v1
 supersedes:
 scope: Questar
-sensor: ASI662MC
+sensor:  ASI183MC
 sensor_temp_c:
 sub_seconds:
 sub_count:
