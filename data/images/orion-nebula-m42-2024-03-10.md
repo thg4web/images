@@ -4,7 +4,7 @@ title: Orion Nebula - M42
 target: orion-nebula-m42
 session:
 status: published
-captured: 2026-03-04
+captured: 2024-03-10
 processed: 2026-09-04
 added: 2026-09-04
 revision: v1

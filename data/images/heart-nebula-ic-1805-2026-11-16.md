@@ -12,8 +12,8 @@ supersedes:
 scope: Seestar S50 Pro Tele
 sensor: IMX585
 sensor_temp_c:
-sub_seconds:
-sub_count:
+sub_seconds: 60
+sub_count: 158
 filter: light-pollution
 processing: [Seestar (on-mount stack)]
 location: "Raleigh, North Carolina"
