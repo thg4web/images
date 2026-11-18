@@ -31,10 +31,9 @@ master: "questar-asi183-archive/solar-system/lunar/2026-11-17/2026-11-17-questar
 
 **Workflow**
 
-I setup my Questar on my Meade #884 tripod on a equatorial wedge and a dovetail tripod and then rough polar aligned the rig. I connected my ASI183MC camera to the ASI AIR Plus and connected my iPad to the ASI Air via it local Wifi access point for faster response (makes focusing easier) 
+The Questar was mounted on a Meade #884 tripod with an equatorial wedge and dovetail mount, followed by a rough polar alignment of the rig. The ASI183MC camera was connected to the ASI Air Plus; an iPad was used to interface with the ASI Air via its local Wi-Fi access point to reduce latency and facilitate easier focusing.
 
-I took one sweep of the Moon with the long axis of the camera oriented N/S and then one sweep with the camera turned 90 deg and I used both sweeps in the image creation just to be sure I had full coverage 35 in all. I took 60 second avi raw videos and processed them on the ASI Air into fit images then converted them on my Mac
-
+Data acquisition consisted of two sweeps of the Moon: one with the camera's long axis oriented N/S and a second with the camera rotated 90 degrees. Both sweeps were utilized to ensure comprehensive coverage (35 images total). Raw 60-second AVI videos were captured and processed into FITS files using the ASI Air, then subsequently converted on a Mac.
 
 
 Seestar Questar 3.5 ASI183MC stack. Captured from the Raleigh, North Carolina.
