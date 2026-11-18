@@ -26,7 +26,7 @@ is_event: false
 event_type: 
 tags: [Moon]
 license: CC BY-NC 4.0
-master: "questar-asi183-archive/solar-system/lunar/2026-11-17/2026-11-17-questar-moon-mosaic.png"
+master: "questar-asi183-archive/solar-system/lunar/2026-11-17/hero/2026-11-17-questar-moon-mosaic.png"
 ---
 
 **Workflow**
