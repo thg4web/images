@@ -45,5 +45,6 @@
  {"id":"ngc7000","name":"North American Nebula - NGC 7000","kind":"Nebula · Cygnus","catalogs":["NGC 7000","Caldwell 20"],"constellation":"Cygnus","description":"North American Nebula - NGC 7000.","current_best":"ngc7000-2026-08-18","progression":["ngc7000-2026-08-18"]},
  {"id":"moon-stofler","name":"Moon - Stofler","kind":"Moon","catalogs":[],"constellation":null,"description":"Moon - Stofler .","current_best":"moon-stofler-2026-11-16","progression":["moon-stofler-2026-11-16"]},
  {"id":"lunar-airliner-transit","name":"Lunar Airliner Transit","kind":"Solar System · Moon","catalogs":[],"constellation":null,"description":"An airliner crossing the face of the Moon — a single frame, caught on the 22nd of August 2026.","current_best":"lunar-airliner-transit-2026-08-22","progression":["lunar-airliner-transit-2026-08-22"]},
- {"id":"ic1396","name":"Elephant's Trunk Nebula - IC 1396","kind":"Nebula","catalogs":["IC"],"constellation":null,"description":"Elephant's Trunk Nebula - IC 1396.","current_best":"ic-2026-10-07","progression":["ic-2026-10-07"]}
+ {"id":"ic1396","name":"Elephant's Trunk Nebula - IC 1396","kind":"Nebula","catalogs":["IC"],"constellation":null,"description":"Elephant's Trunk Nebula - IC 1396.","current_best":"ic-2026-10-07","progression":["ic-2026-10-07"]},
+ {"id":"1st-quarter-moon","name":"1st Quarter Moon","kind":"Moon","catalogs":[],"constellation":null,"description":"1st Quarter Moon.","current_best":"1st-quarter-moon-2026-11-17","progression":["1st-quarter-moon-2026-11-17"]}
 ]
