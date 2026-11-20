@@ -15,7 +15,7 @@ sensor_temp_c:
 sub_seconds:
 sub_count:
 filter: none
-processing: [35 Mosaic]
+processing: [27 Mosaic]
 location: "Raleigh, North Carolina"
 moon_illum_pct: 50
 object_type: Moon
